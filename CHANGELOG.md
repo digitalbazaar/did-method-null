@@ -1,8 +1,9 @@
 # did:null driver ChangeLog
 
-## 2.0.0 - 2022-04-01
+## 1.x.x - 2022-04-01
 
 ### Changed
+- Update docs.
 - Updated tooling.
 - Updated for modern `did-io` API.
 - Added tests.
