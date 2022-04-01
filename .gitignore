@@ -1,0 +1,17 @@
+*.sublime-project
+*.sublime-workspace
+*.sw[op]
+*~
+.DS_Store
+.c9
+.c9revisions
+.cproject
+.nyc_output
+.project
+.settings
+.vscode
+coverage
+node_modules
+npm-debug.log
+package-lock.json
+v8.log
