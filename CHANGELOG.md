@@ -1,6 +1,6 @@
 # did:null driver ChangeLog
 
-## 1.x.x - 2022-04-01
+## 2.0.0 - 2022-04-01
 
 ### Changed
 - Update docs.
