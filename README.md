@@ -1,6 +1,6 @@
 # `did:null` method driver _(@digitalbazaar/did-method-null)_
 
-[![Main CI](https://github.com/digitalbazaar/did-method-null/workflows/Node.js%20CI/badge.svg)](https://github.com/digitalbazaar/did-method-null/actions?query=workflow%3A%22Node.js+CI%22)
+[![Main CI](https://github.com/digitalbazaar/did-method-null/workflows/Main%20CI/badge.svg)](https://github.com/digitalbazaar/did-method-null/actions?query=workflow%3A%22Main+CI%22)
 [![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/did-method-null)](https://codecov.io/gh/digitalbazaar/did-method-null)
 [![NPM Version](https://img.shields.io/npm/v/@digitalbazaar/did-method-null)](https://www.npmjs.com/package/@digitalbazaar/did-method-null)
 
