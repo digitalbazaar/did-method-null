@@ -43,13 +43,7 @@ That DID would correspond to the following DID Document:
   "@context": [
     "https://www.w3.org/ns/did/v1"
   ],
-  id: "did:null:null",
-  "assertionMethod": [],
-  "authentication": [],
-  "capabilityDelegation": [],
-  "capabilityInvocation": [],
-  "keyAgreement": [],
-  "verificationMethod": []
+  id: "did:null:null"
 }
 ```
 

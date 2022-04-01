@@ -13,13 +13,7 @@ const NULL_DID_DOC = {
   '@context': [
     'https://www.w3.org/ns/did/v1'
   ],
-  id: 'did:null:null',
-  assertionMethod: [],
-  authentication: [],
-  capabilityDelegation: [],
-  capabilityInvocation: [],
-  keyAgreement: [],
-  verificationMethod: []
+  id: 'did:null:null'
 };
 
 describe('did:null method driver', () => {
@@ -30,6 +24,12 @@ describe('did:null method driver', () => {
   });
 
   describe('get', () => {
+    it('should get the default DID Document', async () => {
+      const didDocument = await didNullDriver.get();
+
+      expect(didDocument).to.eql(NULL_DID_DOC);
+    });
+
     it('should get the DID Document for a did:null DID', async () => {
       const did = 'did:null:null';
       const didDocument = await didNullDriver.get({did});
@@ -56,11 +56,16 @@ describe('did:null method driver', () => {
   describe('generate', () => {
     it('should generate and get round trip', async () => {
       const {
-        didDocument/*, keyPairs, methodFor*/
+        didDocument, keyPairs, methodFor
       } = await didNullDriver.generate();
       const did = didDocument.id;
 
+      // any check should be empty
+      const mf = methodFor({purpose: 'keyAgreement'});
+
       expect(didDocument).eql(NULL_DID_DOC);
+      expect(keyPairs.size).eql(0);
+      expect(mf).eql(undefined);
 
       const fetchedDidDoc = await didNullDriver.get({did});
       expect(fetchedDidDoc).to.eql(didDocument);
