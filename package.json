@@ -19,6 +19,9 @@
   "license": "BSD-3-Clause",
   "main": "./lib/index.js",
   "module": "./lib/main.js",
+  "files": [
+    "lib/*.js"
+  ],
   "dependencies": {
     "esm": "^3.2.25"
   },
